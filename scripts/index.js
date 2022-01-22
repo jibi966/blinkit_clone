@@ -27,7 +27,7 @@ function logo() {
 
 async function loc(lat, lon) {
   let response = await fetch(
-    `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=da1de6ea55bd1a35ca6697fad73464ab`
+    `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=da1de6ea55bd1a35ca6697fad73464ab`
   );
   let data = await response.json();
   console.log("data:", data[0].name, data[0].state);
