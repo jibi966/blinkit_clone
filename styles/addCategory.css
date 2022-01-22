@@ -1,0 +1,190 @@
+#prod_img {
+  height: 402px;
+  width: 560px;
+  text-align: center;
+}
+#left_prod {
+  height: 909px;
+  width: 560px;
+  margin: 0px 0px 28px 20px;
+  padding: 0px 28px 0px 0px;
+}
+#prod_left_right {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  padding-top: 100px;
+  padding-bottom: 450px;
+}
+.width {
+  width: 542px;
+}
+.border {
+  border-top: 1px solid #f2f2f2;
+}
+.cl {
+  color: #666666;
+}
+.cl2 {
+  color: #333333;
+}
+.fs {
+  font-size: 12px;
+}
+.fs2 {
+  font-size: 14px;
+}
+.height {
+  height: 55px;
+}
+#customer_care {
+  height: 78px;
+}
+.mg {
+  margin: 12px 0px 0px 0px;
+}
+.mg2 {
+  margin: 4px 0px 12px 0px;
+}
+#shelf_life span {
+  height: 16px;
+}
+#shelf_life div {
+  height: 23px;
+}
+#manufature span {
+  height: 16px;
+}
+#manufature div {
+  height: 23px;
+}
+#ingredients {
+  height: 147px;
+}
+.lh {
+  line-height: 16.1px;
+}
+.lh2 {
+  line-height: 23.38px;
+}
+.pd {
+  padding-top: 8px;
+}
+#product {
+  font-size: 16px;
+  line-height: 18.5px;
+  height: 18.5px;
+  padding: 16px 0px 10px 0px;
+}
+#top {
+  height: 402px;
+  width: 560px;
+  padding: 20px 0px 0px 0px;
+}
+#right_prod_info {
+  height: 112px;
+  width: 560px;
+  padding: 0 16px 0px 16px;
+  color: #666666;
+  font-size: 12px;
+  line-height: 13.8px;
+}
+#right_name {
+  font-size: 16px;
+  height: 21px;
+  width: 408px;
+  margin: 0px 85px 0px 0px;
+  padding: 0px 2px 0px 0px;
+  color: #333333;
+  white-space: pre-wrap;
+}
+#right_prod_info button {
+  height: 28px;
+  width: 100px;
+  background-color: #ffe141;
+  color: #666666;
+  /* background: transparent; */
+  border: transparent;
+  outline: none;
+}
+#right_weight {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0px 0px 8px 0px;
+}
+#right_price {
+  height: 18px;
+  width: 33px;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0px 0px 4px 0px;
+  color: #000000;
+}
+#hr {
+  height: 1px;
+  font-size: 12px;
+  line-height: 13px;
+  margin: 16px 14px 0px 10px;
+  background-color: #eeeeee;
+  color: #666666;
+}
+#unit_title {
+  font-size: 14px;
+  height: 18px;
+  width: 58px;
+  color: #000000;
+  margin: 4px 6px 4px 6px;
+  text-align: left;
+}
+#right_prod_unit {
+  margin-left: 15px;
+}
+#right_unit {
+  font-size: 15px;
+  height: 38px;
+  width: 55px;
+  border: 1px solid #0c831f;
+  color: #0c831f;
+  margin: 8px 8px 8px 8px;
+  padding: 8px 8px 8px 8px;
+  text-align: center;
+}
+#bottom {
+  height: 360px;
+  width: 528px;
+  margin: 16px 16px 16px 16px;
+  line-height: 13.8px;
+  font-size: 12px;
+}
+#why_shop {
+  font-size: 16px;
+  height: 18px;
+  width: 528px;
+  line-height: 18px;
+  margin: 0px 0px 16px 0px;
+  color: #000000;
+}
+#shopping_details {
+  width: 528px;
+  height: 304px;
+  font-size: 12px;
+  line-height: 13.8px;
+}
+.flx {
+  display: flex;
+}
+.left_img img {
+  font-size: 12px;
+  line-height: 13.8px;
+  height: 56px;
+  width: 56px;
+  padding: 0px 16px 0px 0px;
+}
+.right_info {
+  font-size: 13px;
+  line-height: 13.8px;
+  height: 56px;
+  width: 456px;
+  padding: 6px;
+  color: #333333;
+}

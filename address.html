@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/address.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="address_cont"></div>
+  </body>
+</html>
+<script type="module">
+  import address from "./scripts/address.js";
+  let add = document.querySelector("#address_cont");
+  add.innerHTML = address();
+  document.querySelector("#continue_btn").addEventListener("click", display);
+  function display() {
+    let city_value = document.querySelector("#area").value;
+    localStorage.setItem("city", JSON.stringify(city_value));
+    console.log(city_value);
+    window.location.href = "map.html";
+  }
+</script>

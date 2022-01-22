@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Everything delivered in 10 minutes | blinkit</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://images.moneycontrol.com/static-mcnews/2022/01/pjimage-29-770x433.jpg?impolicy=website&width=770&height=431"
+    />
+    <link rel="stylesheet" href="./styles/product.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="./scripts/index.js" type="module"></script>
+  </head>
+  <body>
+    <!-- navbar div -->
+    <div id="NAVBAR"></div>
+
+    <div id="sd-nav"></div>
+    <div id="sd-color">
+      <div id="sd-container">
+        <div id="sd-left">
+          <div id="sd-selected">
+            <a>Vegetables & Fruits</a>
+          </div>
+          <div>
+            <a> Organic & Hydroponic</a>
+          </div>
+          <div>
+            <a>Exotics</a>
+          </div>
+          <div>
+            <!-- <a>Fruits</a> -->
+            <a href="./vegetables_fruits/fruits.html">Fruits</a>
+          </div>
+          <div>
+            <a href="./vegetables_fruits/vegetable.html">Vegetables</a>
+          </div>
+          <div>
+            <a>Freshly cut & Sprouts</a>
+          </div>
+        </div>
+        <div id="sd-right">
+          <div id="sd-sort">
+            <div>
+              <div>
+                <p>Home > Vegetables & Fruits</p>
+
+                <b> Vegetables & Fruits</b>
+              </div>
+            </div>
+            <div id="sd-selectDiv">
+              <span>Sort by</span>
+              <select name="" id="sd-select">
+                <option value="">Relevance</option>
+                <option value="low">Price(Low to High)</option>
+                <option value="high">Price(High to Low)</option>
+                <option value="dis">Discount(High to Low)</option>
+                <option value="name">Name(A to Z)</option>
+              </select>
+            </div>
+          </div>
+          <div id="sd-showdata"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer div -->
+    <div id="footer_display"></div>
+  </body>
+</html>
+<script type="module">
+  // let totalprice1 =JSON.parse(localStorage.getItem("totalprice"))
+  // document.getElementById("myCart").innerText = "₹" + totalprice1;
+
+  // // adding navbar
+
+  // import navbar from "./components/navbar.js";
+  //   document.getElementById("NAVBAR").innerHTML = navbar();
+
+  import { changelocation, changelocation2 } from "./components/navigation.js";
+  let sd_nav = document.getElementById("sd-nav");
+  sd_nav.innerHTML = changelocation();
+
+  let cart = JSON.parse(localStorage.getItem("cartdata")) || [];
+  let showdata_div = document.getElementById("sd-showdata");
+
+  import { veg_data } from "./scripts/data.js";
+  import displaydata from "./scripts/showdata.js";
+
+  // adding footer
+  import footer from "./components/footer.js";
+  let display = document.querySelector("#footer_display");
+  display.innerHTML = footer();
+
+  //======
+  let data = veg_data();
+
+  console.log(data);
+  displaydata(data, showdata_div);
+
+  let select_btn = document.getElementById("sd-select");
+
+  select_btn.addEventListener("change", sortdata);
+
+  function sortdata() {
+    let selected = select_btn.value;
+    console.log(selected);
+
+    if (selected == "low") {
+      data.sort(function (a, b) {
+        return Number(a.price) - Number(b.price);
+      });
+    }
+    if (selected == "high") {
+      data.sort(function (a, b) {
+        return Number(b.price) - Number(a.price);
+      });
+    }
+    // if(selected == "name"){
+    //     data.sort(function(a,b){
+    //         return a.name - b.name;
+    //     })
+    // }
+
+    //=====
+    // var sel=document.querySelector("#sortName").value;
+    if (selected == "name") {
+      data.sort(function (a, b) {
+        if (b.name.trim() > a.name.trim()) {
+          return -1;
+        }
+      });
+    }
+    // if(sel=="ndsc"){
+    //     data.sort(function(a,b){
+    //  if(a.type>b.type){
+    //      return -1;
+    //  }
+    // })
+    // }
+
+    //====
+    else if (selected == "") {
+      data.sort(function (a, b) {
+        return 0;
+      });
+    }
+    console.log(data);
+
+    displaydata(data, showdata_div);
+  }
+</script>

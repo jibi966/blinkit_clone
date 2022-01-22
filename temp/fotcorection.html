@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       #footer_head{
+  width: 100%;
+  background-color: #ffffff;
+  /* margin-left: 10%; */
+}
+
+#footer_head>div>h2{
+     font-size: 12px;
+    line-height: 18px;
+    height: 18px;  
+    color: #000000;
+    text-decoration: none solid rgb(0,0,0);
+    margin: 0 0 8px 0;
+    word-spacing: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footer_head>div>p{
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+  font-weight: 200;
+  text-decoration: none solid rgb(102,102,102);
+  color:#b3b3b3;
+  word-spacing: 0px;
+  /* text-align: justify; */
+}
+#footer_head>div:nth-child(2n)>p{
+    height:54px;
+}
+#four_col{
+    display: flex;
+    margin-top: 60px;
+    width: 95%;
+   justify-content: space-around;
+}
+.col{
+    display: flex;
+margin: 0px 10px;
+}
+.img img{
+    height: 72px;
+    width: 56px;
+    padding:0 16px 0 0;
+    vertical-align:middle ;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 13.8px;
+    text-decoration: none solid rgb(102,102,102);
+    color:#666666
+
+}
+.info{
+  height: 16px;
+}
+.info h2{
+    font-size: 14px;
+    text-decoration: none solid rgb(0,0,0);
+    margin:0 0 8px 0;
+}
+.info p{
+    font-size: 12px;
+    line-height: 16.8px;
+    text-decoration: none solid rgb(102,102,102);
+    color:#666666
+}
+#left{
+    font-size: 12px;
+    height: 347px;
+    width: 488px;
+    border-right:  1px solid #EEEEEE;
+    border-bottom:  1px solid #EEEEEE;
+   padding: 32px 12px 32px 0px;
+   line-height: 13.8px;
+   text-decoration: none solid rgb(102,102,102);
+}
+#left_div_list{
+    display: flex;
+    height: 288px;
+   
+}
+#left_div_list>div{
+    margin:12px 0px 12px 0px;
+    padding: 0 0 12px 0;
+}
+.list{
+    font-size: 13px;
+    line-height: 24px;
+}
+.list a{
+    list-style-type:none;
+    list-style-position: outside;
+    text-decoration: none;
+   color: #666666;
+}
+
+
+#middle{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+#right{
+    display: flex;
+    height: 355px;
+    width: 667px;
+    border-bottom:  1px solid #EEEEEE;
+    padding: 24px 12px 32px 40px;
+}
+
+.right_list ul{
+    font-size: 13px;
+    line-height: 24px;
+    width: 200px;
+    height: 144px;
+    padding: 6px 0 0 0 0 ;
+}
+.right_list ul a{
+    list-style-type:none;
+    list-style-position: outside;
+    text-decoration: none;
+    color:#666666
+}
+.title{
+    margin-left: 25px;
+    font-size: 13px;
+    color: black;
+    font-weight: 500;
+}
+#icon{
+    display: flex;
+    margin-left: 40px;
+    height: 84px;
+    width: 90%;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 12px 0 12px 0;
+}
+#left_icon{
+    display: flex;
+    align-items: center;
+    height: 84px;
+    width:546.766px;
+   /* border: 1px solid red; */
+   font-size: 12px;
+}
+/* #left_icon ul{
+    height: 48px;
+    width:450px;
+    font-size: 12px;
+    line-height: 13.8px;
+    
+} */
+ #left_icon a{
+     font-size: 18px;
+    color:black;
+    font-weight: 200;
+     margin: 10px 0 10px 0; 
+   padding:8px 10px 0px 12px
+} 
+.blinkit_care{
+    border: 1px solid #EEEEEE;
+    margin-left: 5px;
+    border-radius: 20px;
+    padding: 5px;
+}
+#right_icon{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500px;
+    height: 84px;
+    width: 334px;
+    margin: 0 0 0 32px;
+}
+#right_img{
+    display: flex;
+}
+#right_img img{
+    height: 31px;
+    width: 115px;
+    margin: 0 0 0 15px;
+}
+#brands{
+    height: 210px;
+    margin:24px 0px 30px 0px;
+    width:95%;
+    margin-bottom: 30px;
+}
+#brands p{
+    margin-left: 40px;
+    word-spacing: 15px;
+    line-height: 22px;
+    color: #666666;
+    cursor: pointer;
+    text-align: justify;
+}
+#brands h3{
+    margin-left: 40px;
+    font-size: 14px;
+    font-weight: 500;
+}
+#payment_partner{
+    height:106px;
+    width:950px;
+    border-bottom: 1px solid #EEEEEE;
+    padding:0px 0px 32px 0px;
+   margin-left: 40px;
+   margin-bottom: 30px;
+}
+#payment_gateway{
+    display: flex;
+    align-items: center;
+}
+#payment_gateway img{
+    height:60px ;
+    width:60px;
+    margin:0px 10px 0px 0px;
+    display: inline-block;
+}
+#payment_gateway span{
+    margin:0px 10px 0px 0px;
+}
+#service{
+  font-size: 14px;
+  line-height: 22px;
+  height: 44px;
+  width: 95%;
+  border-bottom: 1px solid #EEEEEE;
+  padding:16px 0px 16px 0px;
+  color:#666666;
+margin-left: 40px;
+margin-bottom: 30px;
+}
+#policy{
+    font-size: 12px;
+    line-height: 13px;
+    height: 26px;
+    width: 95%;
+    word-spacing: 2px;
+    margin:40px 0px 40px 0px;
+    margin-left: 40px;
+    color: #999999;
+}
+#center{
+    width: 85%;
+margin: auto;
+}
+
+
+   </style>
+</head>
+<body>
+    <div id="center">
+        <div id="footer_head">
+        <div class="head">
+            <h2>We deliver everything in 10 minutes</h2>
+            <p>blinkit (formerly Grofers) is India's fastest online shopping platform. Get fresh groceries and much more delivered online instantly.</p>
+        </div>
+        <div class="head">
+            <h2> Single app for all your daily needs</h2>
+            <p>Order thousands of products at just a tap: milk, eggs, bread, cooking oil, ghee, atta, rice, fresh fruits and vegetables, spices, fresh meat, seafood, frozen veg and non-veg food, chocolates, chips, biscuits, maggi, cold
+                drinks, shampoos, soaps, body wash, pet food, diapers, electronics, 
+                sanitizers, masks, sanitary napkins, health products, hygiene products, organic products and gourmet products, and much more from your neighbourhood stores.
+             </p>
+        </div>
+        <div class="head">
+            <h2>Available in following cities</h2>
+            <p>The delivery service is operational in Agra, Ahmedabad, Aligarh, Allahabad, Bengaluru, Bhiwadi, Bijnor, Chandigarh, Chennai, Delhi, Durgapur, Faridabad, Gauriganj, Gonda, Gurugram, Guwahati, Hisar, Hyderabad, Jaipur,<br> 
+                Jamshedpur, Kanpur, Kolkata, Kota, Lucknow, Mathura, Meerut, Mohali, Moradabad, Mumbai, Noida, Panchkula, Panipat, Pune, Raebareli, Rohtak, Sonipat, Vadodara, Zirakpur
+            </p>
+        </div>
+    </div>
+    <div id="four_col">
+        <div class="col">
+           <div class="img">
+            <img src="https://blinkit.com/images/home/express-delivery-icon-93fce76.png" alt="">
+           </div>
+            <div class="info">
+                <h2>10 minute grocery now</h2>
+                <p>Get your order delivered to your doorstep at the earliest from dark stores near you.</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="img">
+                <img src="https://blinkit.com/images/home/footer-best-price-icon-90b5bd7.png" alt="">
+            </div>
+            <div class="info">
+                <h2>Best Prices & Offers
+                </h2>
+                <p>Cheaper prices than your local supermarket, great cashback offers to top it off.
+                </p>
+            </div>
+        </div>
+        <div class="col">
+           <div class="img">
+            <img src="https://blinkit.com/images/home/footer-genuine-products-icon-d2756ce.png" alt="">
+           </div>
+            <div class="info">
+                <h2>Wide Assortmen</h2>
+                <p>Choose from 5000+ products across food, personal care, household & other categories.
+                </p>
+            </div>
+        </div>
+        <div class="col">
+           <div class="img"> 
+               <img src="https://blinkit.com/images/home/footer-easy-returns-icon-02b777e.png" alt="">
+            </div>
+            <div class="info">
+                <h2>Easy Returns</h2>
+                <p>Not satisfied with a product? Return it at the doorstep & get a refund within hours.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="middle">
+    <div id="left">
+        <div  class="title">
+            <p>Categories</p>
+        </div>
+        <div id="left_div_list">
+            <div id="left_list">
+                <ul class="list">
+                    <a href=""><li>grocery & staples</li></a>
+                    <a href=""><li>household items</li></a>
+                    <a href=""><li>bakery & biscuits</li></a>
+                    <a href=""><li>cold drink & juices</li></a>
+                    <a href=""><li>sweet tooth</li></a>
+                    <a href=""><li>pharma & baby care</li></a>
+                    <a href=""><li>egg ,meat & fish</li></a>
+                    <a href=""><li>battery, buib & accesories</li></a>
+                    <a href=""><li>Home furnishing</li></a>
+                    <a href=""><li>Stationery needs</li></a>
+                    <a href=""><li>best value</li></a>
+                    <a href=""><li>ocassion,festival</li></a>
+                </ul>
+            </div>
+            <div id="right_list">
+                <ul class="list">
+                    <a href=""><li>vegetable & foods</li></a>
+                    <a href=""><li>noodle ,sauses & accesories</li></a>
+                    <a href=""><li>personal care</li></a>
+                    <a href=""><li>tea,coffee & health drinks</li></a>
+                    <a href=""><li>munchies</li></a>
+                    <a href=""><li>daily bread & eggs</li></a>
+                    <a href=""><li>frozen food</li></a>
+                    <a href=""><li>cleaning & bathroom essentials</li></a>
+                    <a href=""><li>kithen & dining needs</li></a>
+                    <a href=""><li>pet care</li></a>
+                    <a href=""><li>lowest price</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <div class="first">
+            <div class="title">
+                <p>company</p>
+            </div>
+            <div class="right_list">
+              <ul>
+                  <a href=""><li>About</li></a>
+                  <a href=""><li>career</li></a>
+                  <a href=""><li>blog</li></a>
+                  <a href=""><li>press</li></a>
+                  <a href=""><li>lead</li></a>
+                  <a href=""><li>value</li></a>
+              </ul>
+            </div>
+        </div>
+        <div class="second">
+            <div class="title">
+                <p>For consumers</p>
+            </div>
+            <div class="right_list">
+              <ul>
+                  <a href=""><li>Privacy</li></a>
+                  <a href=""><li>Terms</li></a>
+                  <a href=""><li>Faq</li></a>
+                  <a href=""><li>secuirity</li></a>
+                  <a href=""><li>mobile</li></a>
+                  <a href=""><li>contract</li></a>
+              </ul>
+            </div>
+        </div>
+        <div class="third">
+            <div class="title">
+                <p>For Partner</p>
+            </div>
+            <div class="right_list">
+              <ul>
+                  <a href=""><li>Partner</li></a>
+                  <a href=""><li>Express</li></a>
+                  <a href=""><li>Local</li></a>
+                  <a href=""><li>spotlight</li></a>
+                  <a href=""><li>warehouse</li></a>
+                  <a href=""><li>deliver</li></a>
+              </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="icon">
+    <div id="left_icon">
+      <span>Follow us</span>
+      <ul>
+          <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <a href="" class="blinkit_care">
+              <span><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
+              <span>@blinkitcares</span>
+          </a>
+          <a href="" class="blinkit_care">
+            <span><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
+            <span>@blinkiteng</span>
+        </a>
+      </ul>
+    </div>
+    <div id="right_icon">
+        <span>Download app</span>
+        <div id="right_img">
+            <img src="https://blinkit.com/images/home/google-play_1x-0c7086a.png" alt="">
+            <img src="https://blinkit.com/images/home/app-store_1x-cbeb7ea.png" alt="">
+        </div>
+    </div>
+    </div>
+    <div id="brands">
+    <h3>Brands available on blinkit (formerly grofers)</h3>
+    <p>grofers Happy Day  grofers Happy Home  grofers Mother's Choice  g Fresh O'range Savemore24 MantraAashirvaad Act II
+        Amul Axe Bambino Best Value Bingo Bisleri Boost Bournvita Britannia Brooke Bon Bru Cadbury Cheetos Cinthol Closeup
+        Coca-Cola Colgate Dabur Danone Del Monte Dettol Dhara Dove Durex English Oven Everest Fiama Di Wills Garnier Gatorade Gillette
+        Glucon-D Grocery Gowardhan Hajmola Haldiram's Head & Shoulders Heinz Himalaya Horlicks India GateKellogg's Kinley Kissan
+        Knorr L'Oreal Lay's Lijjat Limca Lipton Maggi Madhur McCain MDH Minute Maid Mirinda Mother Dairy Mountain Dew MTR
+        Nescafe Nestle Nivea Nutella Oral-B Oreo Palmolive Pantene Paper Boat Parachute
+        Parle Patanjali Pears Pepsi Pepsodent Pillsbury PrincewareRajdhani Real Red Bull Safal Saffola Shakti Bhog Smith & Jones Sprite StayfreeSundrop
+        Sunfeast
+        Sunsilk
+    </p>
+    </div>
+    <div id="payment_partner">
+    <h3>Payment partners</h3>
+    <div id="payment_gateway">
+        <img src="https://blinkit.com/images/payment/mobikwik-c96e507.png" alt="">
+        <img src="https://blinkit.com/images/payment/paytm-b393728.png" alt="">
+        <img src="https://blinkit.com/images/payment/visa-95f2100.png" alt="">
+        <img src="https://blinkit.com/images/payment/mastercard-01e540b.png" alt="">
+        <img src="https://blinkit.com/images/payment/maestro-e164fe0.png" alt="">
+        <img src="https://blinkit.com/images/payment/rupay-39478ad.png" alt="">
+        <img src="https://blinkit.com/images/payment/amex-fdda4b1.png" alt="">
+        <img src="https://blinkit.com/images/payment/sodexo-82f2019.png" alt="">
+        <img src="https://blinkit.com/images/payment/bhim-upi-02aef45.png" alt="">
+        <span>Net Banking</span>
+        <span>Cash on delivery</span>
+        <span>Grofers cash</span>
+    </div>
+    </div>
+    <div id="service">
+    "Blinkit (formerly Grofers)" is owned & managed by "Grofers India Private Limited” and is not related, linked or interconnected in whatsoever manner or nature, to “GROFFR.COM” which is a real estate
+     services business operated by “Redstone Consultancy Services Private Limited”.
+    </div>
+    <div id="policy">
+    By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their 
+    respective owners. 2016-2021 © Grofers India Pvt Ltd. All rights reserved.
+    </div>
+    </div>
+</body>
+</html>

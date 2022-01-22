@@ -1,0 +1,189 @@
+ /* {
+            width: 100%;
+            height:100vh;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+        } */
+        #cart_div_byOm{
+            position: relative;
+
+        }
+        #btn_byOm {
+            /* width:130px; */
+           
+            width:130px;
+            height:30px;
+            display:flex;
+            border: none;
+
+            justify-content:flex-end;
+            /* align-items: flex-end;  */
+            /* position: absolute; */
+            position: absolute;
+            bottom: -3px;
+            
+            /* transform:translateX(-100px) */
+        }
+        #btn_byOm  button{
+            /* position: relative;
+            /* float:right; */
+            /* left:100px; */ 
+            /* right: 0; */
+            /* bottom: 50px; */
+            /* background-color:rgb(201, 198, 193); */
+            border:0;
+          
+            padding: 5px 15px;
+            font-size: 20px;
+            color:rgb(14, 14, 14);
+            cursor: pointer;
+            outline: none;
+            margin:0;
+            /* box-shadow: 0 5px 18px; */
+           
+        }
+        #minusBtn_byOm, #plusBtn_byOm{
+            display:none;
+            font-weight:bold;
+            font-size: 20px;
+        }
+       
+
+
+
+
+
+        #container_byOm{
+            width:80%;
+            margin:auto;
+            /* padding-left: 200px; */
+            /* border: 1px solid red; */
+            /* margin-top: 50px; */
+            /* overflow: hidden; */
+            padding-top: 60px;
+            /* overflow-y: hidden; */
+          
+            }
+        #inner_byOm{
+            width:100%;
+            height:78Px;
+            display: flex;
+            gap: 10px;
+            /* border: 1px solid rgb(247, 247, 247); */
+        }
+       
+        #left_byOm{
+            width:65%;
+            height:80%;
+            /* margin: auto; */
+            /* border: 1px solid blue; */
+        }
+        #rigth_byOm{
+            width:30%;
+            height:90%;
+            margin: auto;
+            /* border: 1px solid rgb(51, 255, 0); */
+        }
+        #subtitle_byOm{
+            padding-top: 0;
+            margin-top: 0;
+            line-height: 0;
+            font-family :Okra-Regular;
+            font-size: 14px;
+        }
+        #main_img_div_byOm{
+            display:flex;
+            gap: 20px;
+            width:100%;
+            height:260px;
+            overflow: hidden;
+            margin:auto;
+            /* border: 1px solid black; */
+        }
+     #img_byOm{
+        width: 126px;
+        height:126px;
+        background-color:white;
+        border-radius: 5px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #sliderDiv_byOm{
+            width:100%;
+            height: 500px;
+            /* margin: auto; */
+        }
+       #slider-image_byOm{
+            width:100%;
+           
+            height:100%;
+        }
+       #rigth_byOm{
+            display: flex;
+            justify-content: flex-end;
+       }
+        #sliderBtn{
+            margin: auto;
+            width:34px;
+            height:25px;
+            justify-content: flex-end;
+            /* border: 1px solid teal; */
+        }
+        #see_more{
+            width:60px;
+            justify-content:flex-end;
+            margin-top: 100px;
+            height: 30px;
+            /* border: 1px solid red; */
+            padding-bottom:30px;
+            padding-left: 50px;
+            margin: auto;
+        }
+        #sliderBtn{
+            display: flex;
+            width:80px;
+            margin-top: 20px;
+            height:25px;
+            gap: 5px;
+            justify-content: flex-end;
+            margin: auto;
+        }
+        #l_arrow + #r_arrow{
+          
+            width: 34px;
+            height: 24px;
+            border:none;
+            text-align: center;
+            justify-content: center;
+            background-color:whitesmoke;
+            margin: auto;
+            padding-right: 50px;
+            
+        }
+        #grocery_div_byOm{
+            display: flex;
+            gap: 5px;
+            overflow: hidden;
+        }
+        #cold_drink_div_byOm{
+            display: flex;
+            gap: 5px;
+            overflow: hidden;
+        } 
+        #pc_div_byOm{
+            display: flex;
+            gap: 5px;
+            overflow: hidden;
+        } 
+        #static_div_byOm{
+            margin-left: 50px;
+            display: flex;
+            gap: 10px;
+        }
+        #static_div_byOm img{
+            width: 300px;
+            height:150px;
+
+          }
+       

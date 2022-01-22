@@ -1,0 +1,79 @@
+#sur-container{
+    width: 100%;
+    padding-top: 40px;
+}
+.subcontainer1,.subcontainer2,.subcontainer3,.subcontainer4,.subcontainer5,.subcontainer6,.subcontainer7,.subcontainer8,.subcontainer9,.subcontainer10,.subcontainer11,.subcontainer12,.subcontainer13,.subcontainer14,.subcontainer15,.subcontainer16,.subcontainer17,.subcontainer18,.subcontainer19,.subcontainer20,.subcontainer21,.subcontainer22,.subcontainer23,.subcontainer24,.subcontainer25,.subcontainer26{
+    width: 85%;
+    /* border: 1px solid grey; */
+    margin: auto;
+    margin-top: 8px;
+    padding-bottom: 12px;
+    /* background-color: white; */
+}
+
+.subcontainer1 .subbox img,.subcontainer2 .subbox2 img,.subcontainer3 .subbox3 img,.subcontainer4 .subbox4 img,.subcontainer5 .subbox5 img,.subcontainer6 .subbox6 img,.subcontainer7 .subbox7 img,.subcontainer8 .subbox8 img,.subcontainer9 .subbox9 img,.subcontainer10 .subbox10 img,.subcontainer11 .subbox11 img,.subcontainer12 .subbox12 img,.subcontainer13 .subbox13 img,.subcontainer14 .subbox14 img,.subcontainer15 .subbox15 img,.subcontainer16 .subbox16 img,.subcontainer18 .subbox18 img,.subcontainer19 .subbox19 img,.subcontainer20 .subbox20 img,.subcontainer21 .subbox21 img,.subcontainer22 .subbox22 img,.subcontainer23 .subbox23 img,.subcontainer17 .subbox17 img{
+    width: 180px;
+    height: 100%;
+/* border: 1px solid red; */
+}
+
+.subbox,.subbox2,.subbox3,.subbox4,.subbox5,.subbox6,.subbox7,.subbox8,.subbox9,.subbox10,.subbox11,.subbox12,.subbox13,.subbox14,.subbox15,.subbox16,.subbox17,.subbox18,.subbox19,.subbox20,.subbox21,.subbox22,.subbox23,.subbox24,.subbox25,.subbox26{
+    display: flex;
+    border: 1px solid rgb(228, 220, 220);
+    width: 100%;
+    margin: auto;
+    height: 150px;
+    justify-content: space-between;
+  
+}
+.subbox div p:nth-child(1),.subbox2 div p:nth-child(1),.subbox3 div p:nth-child(1),.subbox4 div p:nth-child(1),.subbox5 div p:nth-child(1),.subbox5 div p:nth-child(1),.subbox6 div p:nth-child(1),.subbox7 div p:nth-child(1),.subbox7 div p:nth-child(1),.subbox8 div p:nth-child(1),.subbox9 div p:nth-child(1),.subbox10 div p:nth-child(1),.subbox11 div p:nth-child(1),.subbox12 div p:nth-child(1),.subbox13 div p:nth-child(1),.subbox14 div p:nth-child(1),.subbox15 div p:nth-child(1),.subbox16 div p:nth-child(1),.subbox17 div p:nth-child(1),.subbox18 div p:nth-child(1),.subbox19 div p:nth-child(1),.subbox20 div p:nth-child(1),.subbox21 div p:nth-child(1),.subbox22 div p:nth-child(1){
+    font-weight: bold;
+    color: #56b226;
+}
+.subbox div p:nth-child(2),.subbox2 div p:nth-child(2),.subbox3 div p:nth-child(2),.subbox4 div p:nth-child(2),.subbox5 div p:nth-child(2),.subbox5 div p:nth-child(2),.subbox6 div p:nth-child(2),.subbox7 div p:nth-child(2),.subbox7 div p:nth-child(2),.subbox8 div p:nth-child(2),.subbox9 div p:nth-child(2),.subbox10 div p:nth-child(2),.subbox11 div p:nth-child(2),.subbox12 div p:nth-child(2),.subbox13 div p:nth-child(2),.subbox14 div p:nth-child(2),.subbox15 div p:nth-child(2),.subbox16 div p:nth-child(2),.subbox17 div p:nth-child(2),.subbox18 div p:nth-child(2),.subbox19 div p:nth-child(2),.subbox20 div p:nth-child(2),.subbox21 div p:nth-child(2),.subbox22 div p:nth-child(2){
+    font-weight: bold;
+    font-size: large;
+}
+.subbox div p:nth-child(3),.subbox2 div p:nth-child(3),.subbox3 div p:nth-child(3),.subbox4 div p:nth-child(3),.subbox5 div p:nth-child(3),.subbox5 div p:nth-child(3),.subbox6 div p:nth-child(3),.subbox7 div p:nth-child(3),.subbox7 div p:nth-child(3),.subbox8 div p:nth-child(3),.subbox9 div p:nth-child(3),.subbox10 div p:nth-child(3),.subbox11 div p:nth-child(3),.subbox12 div p:nth-child(3),.subbox13 div p:nth-child(3),.subbox14 div p:nth-child(3),.subbox15 div p:nth-child(3),.subbox16 div p:nth-child(3),.subbox17 div p:nth-child(3),.subbox18 div p:nth-child(3),.subbox19 div p:nth-child(3),.subbox20 div p:nth-child(3),.subbox21 div p:nth-child(3),.subbox22 div p:nth-child(3){
+    color: #616464;
+}
+
+
+.items,.items2,.items3,.items4,.items5,.items6,.items7,.items8,.items9,.items10,.items11,.items12,.items13,.items14,.items15,.items16,.items17,.items18,.items19,.items20,.items21,.items22,.items23,.items24,.items25,.items26{
+    display: flex;
+    /* border: 1px solid rgb(228, 220, 220); */
+    width: 99%;
+    margin: auto;
+    flex-wrap: wrap;
+    background-color:#ffffff ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.arrow{
+    border-left: 1px solid rgb(228, 220, 220) ;
+    width: 35px !important;
+    /* border-right: 1px solid black; */
+
+}
+.iconify{
+    padding-top: 68px;
+    padding-left: 8px;
+}
+.items div,.items2 div,.items3 div,.items4 div,.items5 div,.items6 div,.items7 div,.items8 div,.items9 div,.items10 div,.items11 div,.items12 div,.items13 div,.items14 div,.items15 div,.items16 div,.items17 div,.items18 div,.items19 div,.items20 div,.items21 div,.items22 div,.items23 div,.items24 div,.items25 div,.items26 div{
+    border-right: 1px solid  rgb(228, 220, 220);
+    border-bottom: 1px solid  rgb(228, 220, 220);
+    width: 16.3%;
+    height: 147px;
+    text-align: center;
+    align-items: center;
+}
+.items div p:nth-child(2),.items2 div p:nth-child(2),.items3 div p:nth-child(2),.items4 div p:nth-child(2),.items5 div p:nth-child(2),.items6 div p:nth-child(2),.items7 div p:nth-child(2),.items8 div p:nth-child(2),.items9 div p:nth-child(2),.items10 div p:nth-child(2),.items11 div p:nth-child(2),.items12 div p:nth-child(2),.items13 div p:nth-child(2),.items14 div p:nth-child(2),.items15 div p:nth-child(2),.items16 div p:nth-child(2),.items17 div p:nth-child(2),.items18 div p:nth-child(2),.items19 div p:nth-child(2),.items20 div p:nth-child(2),.items21 div p:nth-child(2),.items22 div p:nth-child(2) {
+    margin-top: -5px;
+    color: #707373;
+}
+
+.items div p:nth-child(3),.items3 div p:nth-child(3),.items4 div p:nth-child(3),.items5 div p:nth-child(3),.items6 div p:nth-child(3),.items7 div p:nth-child(3),.items8 div p:nth-child(3),.items9 div p:nth-child(3),.items10 div p:nth-child(3),.items11 div p:nth-child(3),.items12 div p:nth-child(3),.items13 div p:nth-child(3),.items14 div p:nth-child(3),.items15 div p:nth-child(3),.items16 div p:nth-child(3),.items17 div p:nth-child(3),.items18 div p:nth-child(3),.items19 div p:nth-child(3),.items20 div p:nth-child(3),.items21 div p:nth-child(3),.items22 div p:nth-child(3) {
+    color: #56b226;
+}
+a{
+    text-decoration: none;
+}

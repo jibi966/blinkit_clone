@@ -1,0 +1,92 @@
+#Ancontainer{
+    margin: auto;
+    border: 2px solid black;
+    width: 80%;
+}
+#Anpaan{
+    /* border:2px solid black; */
+    margin: auto;
+    height: 200px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+#Andownload{
+    /* border:2px solid black; */
+    margin: auto;
+    height: 200px;
+    width: 80%;
+}
+
+#AnbigDiv{
+       display: flex;
+        
+        margin: auto;
+        height: 200px;
+        width: 80%;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+#AnbigDiv>div{
+    width: 30%;
+    height: 100%;
+}
+
+#AnfruitDiv{
+    
+    margin: auto;
+    height: 400px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(8,11%);
+    grid-template-rows: repeat(2,180px);
+    gap: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.Anfruits{
+    width: 100%;
+    height: 100%;
+
+}
+.AndivClass{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 100%;
+}
+#AnthreeDiv{
+    /* border: 2px solid black; */
+    display: flex;   
+    height: 220px;
+    width: 60%;
+    gap: 17px;
+}
+#AnthreeDiv>div{
+    /* border: 2px solid black; */
+   
+    height: 100%;
+    width: 30%;
+}
+                                     /* grocery styling  */
+
+#Angrocery{
+    margin: auto;
+    border: 2px solid black;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+    grid-gap: 10px;
+
+}
+.Angrocerysmalldiv{
+    /* border: 2px solid red; */
+    width: 90%;
+    text-align: center;
+    border: 2px solid transparent;
+    box-shadow: lightblue;
+    
+}
+
+
+ 

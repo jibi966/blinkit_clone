@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/map.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="map_cont">
+    <div id="map_div">
+        <h2 id="#map_title">Add New Delivery Address</h2>
+        <h4>Please enter the accurate address, it will help us to serve you better </h4>
+        <div class="mapouter" style="margin-left: 0px;">
+            <div class="gmap_canvas">
+            <iframe width="500" 
+            height="300" 
+            id="gmap_canvas" 
+            src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+            frameborder="0" 
+            scrolling="no" 
+            marginheight="0" 
+            marginwidth="0">
+         </iframe>
+        </div>
+    </div>
+    <div id="map_save">
+        <h3>Move the map to place the pin on your delivery location</h3>
+        <button id="save_btn">save</button>
+        <button id="map_cancel_btn">cancel</button>
+    </div>
+    </div>
+</div>
+
+
+  
+</body>
+</html>
+<script type="module">
+    import address from './scripts/address.js';
+    let city=JSON.parse(localStorage.getItem("city"));
+    map(city);
+    function map(value){
+        let url=`https://maps.google.com/maps?q=${value}&t=&z=13&ie=UTF8&iwloc=&output=embed`;
+        document.querySelector("iframe").src=url;
+    }
+    document.querySelector("#save_btn").addEventListener("click",()=>{
+        window.location.href="payment.html"
+    })
+    
+</script>
+<!-- <div class="mapouter">
+)
+} -->

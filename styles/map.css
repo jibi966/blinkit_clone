@@ -1,0 +1,48 @@
+/* #map_cont{
+    height: 100vh;
+    border: 1px solid red;
+    background-image: url('https://media.gettyimages.com/photos/google-ceo-sundar-pichai-poses-during-the-opening-day-of-a-new-berlin-picture-id1086058968?s=612x612');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+} */
+#map_cont{
+    background-image: url('/images/unit3_blog.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   height:100vh;
+   padding-top: 30px;
+}
+
+#map_div{
+    color: #666666;
+    background-color: white;
+    margin:auto;
+    width:540px;
+    height:500px;
+    margin-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
+#map_save{
+    width:500px;
+    margin: auto;
+}
+
+
+#save_btn,#map_cancel_btn{
+    height: 42px;
+    width:120px;
+    margin:24px 80px 0px 40px;
+   
+}
+h3,h2,h4{
+    text-align: center;
+}
+#save_btn{
+    background-color: green;
+    border: transparent;
+}
+

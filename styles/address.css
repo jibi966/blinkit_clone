@@ -1,0 +1,83 @@
+#address{
+    height: 100vh;
+    width:100%;
+    border: 1px solid red;
+    background-image: url('/images/unit3_blog.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+#inside_address{
+    height:515px;
+    width: 470px;
+    padding: 30px 36px 0px 36px;
+    margin: auto;
+    margin-top: 50px;
+    background-color:white;
+    border-radius: 5px;
+}
+#address_title{
+    height:20px;
+    line-height: 20px;
+    font-size: 18px;
+    margin: 0px 0px 8px 0px;
+}
+h2,h4{
+    text-align: center;
+    line-height: 0;
+}
+#area{
+height:30px;
+width:450px
+}
+#title{
+    height: 42px;
+    width:91px
+}
+#First_last{
+    height: 38px;
+    width: 355px;
+}
+
+#flat_no{
+    width:450px;
+    height:38px;
+    margin:4px 0px 0px 0px;
+    /* padding:12px 10px 12px 10px */
+}
+#street_no{
+    width:450px;
+    height:38px;
+    margin:4px 0px 0px 0px;
+    /* padding:12px 10px 12px 10px */
+}
+#continue_btn,#cancel_btn{
+    width:120px;
+    height: 38px;
+    margin-top: 15px;
+}
+#home_office_other{
+    width:450px;
+    height:38px;
+    margin-top: 25px;
+}
+#street,#flat,#name{
+    margin-top: 20px;
+}
+#continue_cancel{
+    width:280px;
+    display: flex;
+    justify-content: space-around;
+}
+#continue_btn{
+    background-color: #459220;
+    border: transparent;
+    color: white;
+}
+#address_info{
+    background-color: #F9F9F9;
+    color:#666666
+}
+
+

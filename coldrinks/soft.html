@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Everything delivered in 10 minutes | blinkit</title>
+    <link rel="icon" type="image/x-icon" href="https://images.moneycontrol.com/static-mcnews/2022/01/pjimage-29-770x433.jpg?impolicy=website&width=770&height=431">
+    <link rel="stylesheet"   href="../styles/product.css" />
+    <link rel="stylesheet" href="../styles/footer.css"  />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <script src="../scripts/index.js"  type="module"></script>
+</head>
+<body>
+ <!-- navbar div -->
+ <div id="NAVBAR"></div>
+
+    <div id="sd-nav"></div>
+    <div id="sd-color">
+    <div id="sd-container">
+    
+        <div id="sd-left">
+            <div >
+               
+                <a href="../colddrink.html">Cold Drinks & Juices</a>
+                
+            </div>
+            <div  id="sd-selected" >
+               
+                 <!-- <p>Fruits</p> -->
+                 <a href="./soft.html">Soft Drinks</a>
+            </div>
+            <div>
+               <!-- <p>Fruits</p> -->
+               <a href="./juices.html">Fruit Juices</a>
+            </div>
+            <div>
+                <!-- <p>Fruits</p> -->
+                <a href="./soda.html">Soda & Mixes</a>
+            </div>
+            <div>
+               
+                <a href="./herbal.html">Herbal Drinks</a>
+            </div>
+            <div  >
+               
+                <a href="./energy.html">Energy Drinks</a>
+            </div>
+            <div>
+                <a href="./water.html">Water</a>
+            </div>
+        </div>
+        <div id="sd-right">
+            <div id="sd-sort">
+              
+                <div>
+                    <div>
+                        <p>Home > Cold Drinks & Juices > Soft Drinks</p>
+                   
+                   
+                       <b> Soft Drinks</b>
+                    </div>
+                </div>
+                <div id="sd-selectDiv">
+                    <span>Sort by</span>
+                    <select name="" id="sd-select">
+                        <option value="">Relevance</option>
+                        <option value="low">Price(Low to High)</option>
+                        <option value="high">Price(High to Low)</option>
+                        <option value="dis">Discount(High to Low)</option>
+                        <option value="name">Name(A to Z)</option>
+                    </select>
+                </div>
+            </div>
+            <div id="sd-showdata">
+
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+       <!-- footer div -->
+       <div id="footer_display"></div>
+</body>
+</html>
+<script type="module">
+    // adding navbar
+
+// import navbar from "../components/navbar.js";
+//   document.getElementById("NAVBAR").innerHTML = navbar();
+
+  // adding footer 
+import footer from '../components/footer.js'
+    let display=document.querySelector("#footer_display");
+    display.innerHTML=footer();
+
+    //======
+
+import  {changelocation,changelocation2} from "../components/navigation.js"
+    let sd_nav = document.getElementById("sd-nav");
+    sd_nav.innerHTML = changelocation2()
+
+    let cart = JSON.parse(localStorage.getItem("cartdata")) || [];
+let showdata_div = document.getElementById("sd-showdata");
+
+import  {cold_drink} from "../scripts/data.js"
+import displaydata from "../scripts/showdata.js"
+
+let data = cold_drink()
+console.log(data)
+
+let arr =[];
+for(let i=0; i<data.length; i++){
+    if(data[i].cat == "soft"){
+        console.log(data[i])
+arr.push(data[i])
+    }
+}
+
+
+displaydata(arr,showdata_div)
+
+let select_btn = document.getElementById("sd-select");
+
+select_btn.addEventListener("change",sortdata)
+
+
+function sortdata(){
+
+    let selected = select_btn.value;
+    console.log(selected)
+   
+        if(selected == "low"){
+        arr.sort(function (a,b){
+            return Number(a.price)-Number(b.price);
+        });
+    }
+    if(selected == "high"){
+        arr.sort(function (a,b){
+            return Number(b.price)-Number(a.price);
+        });
+    }
+    if(selected=="name"){
+        arr.sort(function(a,b){
+     if(b.name.trim()>a.name.trim()){
+         return -1;
+     }
+    })
+    }
+    else if(selected == ""){
+        arr.sort(function (a,b){
+            return 0;
+        });
+    }
+    console.log(arr)
+    displaydata(arr,showdata_div)
+    
+   
+
+    }
+   
+   
+   
+
+
+
+
+
+</script>
